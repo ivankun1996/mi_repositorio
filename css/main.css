@@ -252,14 +252,11 @@ body {
   color: #000;
   overflow-x: hidden; }
 
-p {
-  color: #fff; }
-
 h2 {
   font-weight: bold;
   margin-bottom: 40px;
-  padding-top: 40px;
-  color: #fff; }
+  padding-top: ;
+  color: gray; }
 
 @media (max-width: 767px) {
   h2 {
@@ -368,3 +365,70 @@ h2 {
 
 .link {
   color: white !important; }
+
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+
+ul.timeline:before {
+    content: ' ';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+}
+
+
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+
+
+li.timeline-item::before {
+    content: ' ';
+    background: #ddd;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.tituloteam {
+  color: white;
+  margin-top: 40px;
+
+}
+
+.parrafoteam {
+  color: white;
+}
+
+.titulocontacto {
+  color:white;
+}
+
+.textoinicio {
+  color: white;
+}
